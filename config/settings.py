@@ -22,13 +22,13 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get("DJANGO_DEBUG", False))
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
 # django를 개발할 때 보이는 에러 페이지가 heroku에서 보이지 않도록 함
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
 # 모든 호스트 허용
 
 
